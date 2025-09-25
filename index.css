@@ -21,7 +21,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	background-color: #ffffff;
-	padding: 20px 25px;
+	padding: 25px 25px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 	position: relative;
 	z-index: 10;
@@ -38,4 +38,19 @@ body {
 	text-decoration: none;
 	color: #555555;
 	font-size: 1rem;
+}
+
+.destination {
+	text-align: left;
+	padding: 20px;
+	padding-top: 80px;
+}
+
+.destination h1 {
+	margin-bottom: 20px;
+}
+
+.destination p {
+	font-size: 1.25rem;
+	font-weight: 500;
 }
