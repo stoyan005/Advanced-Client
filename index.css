@@ -65,41 +65,44 @@ body {
 /* ! SEARCH BAR */
 .search {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	width: max-content;
-	padding: 1rem;
+	max-width: max-content;
 	margin-left: 25px;
-	border-radius: 40px;
+	border-radius: 20px;
 	background-color: #ffffff;
+	overflow: hidden;
+}
+
+.search svg {
+	background-color: #e4e4e4;
+	border-radius: 10px 0 0 10px;
+	padding: 10px;
 }
 
 .search-bar {
+	width: 300px;
 	font-size: 1rem;
-	color: #333333;
 	margin-left: 1rem;
+	color: #333333;
 	outline: none;
 	border: none;
 	background: transparent;
-	width: 250px;
-}
-
-.material-symbols-outlined {
-	padding: 5px;
-	border-radius: 20px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-	background-color: #f5f3f3;
 }
 
 .search-button {
 	border: none;
 	cursor: pointer;
-	background-color: #2f8ff7;
-	font-size: 1rem;
-	font-weight: 500;
 	color: #ffffff;
+	background-color: #1a74d4;
+	font-size: 1.25rem;
+	font-weight: 500;
 	padding: 10px 20px;
-	border-radius: 20px;
+	border-radius: 0 10px 10px 0;
+	transition: background-color 0.2s ease-in;
+}
+
+.search-button:hover {
+	background-color: #55a7ff;
 }
 
 input[type='search']::-webkit-search-cancel-button {
@@ -107,24 +110,18 @@ input[type='search']::-webkit-search-cancel-button {
 	-webkit-appearance: none;
 }
 
-.search-button:hover {
-	background-color: #2877cc;
-}
-
 /* ! FILTER */
 .filter {
 	display: flex;
-	justify-content: flex-start;
 	align-items: center;
 	padding: 2rem;
 	gap: 3rem;
-	font-weight: 600;
 }
 
 .filter-button {
 	display: inline-flex;
 	align-items: center;
-	padding: 6px 20px 6px 6px;
+	padding-right: 20px;
 	margin: 5px;
 	color: black;
 	background: none;
@@ -132,6 +129,14 @@ input[type='search']::-webkit-search-cancel-button {
 	font-size: 1rem;
 	font-weight: 600;
 	gap: 1rem;
+	border-radius: 30px;
+	border: 2px solid #e4e4e4;
+	cursor: pointer;
+	transition: border-color 0.3s ease-in;
+}
+
+.filter-button:hover {
+	border-color: #2877cc;
 }
 
 .icon-circle {
@@ -147,7 +152,6 @@ input[type='search']::-webkit-search-cancel-button {
 }
 
 .filter-button svg {
-	border-radius: 20px;
 	width: 30px;
 	height: 30px;
 	flex-shrink: 0;
@@ -155,6 +159,15 @@ input[type='search']::-webkit-search-cancel-button {
 
 /* ! INFO */
 .info {
+	display: flex;
+	align-items: center;
 	text-align: left;
 	padding: 30px;
+	gap: 1rem;
+}
+
+.info svg {
+	width: 20px;
+	height: 20px;
+	color: rgb(0, 204, 255);
 }
