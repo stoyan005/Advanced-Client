@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Accommodations in London</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f8f8f8;
+				margin: 0;
+				padding: 40px;
+				justify-content: center;
+			}
+
+			.container {
+				max-width: max-content;
+				width: 100%;
+				background: #fff;
+				border-radius: 16px;
+				padding: 30px;
+				box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+				margin-left: 0 auto 0 0; /* flush left */
+				display: block;
+			}
+
+			h1 {
+				font-size: 24px;
+				color: #333;
+				margin-bottom: 25px;
+			}
+
+			.grid-container {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr); /* 3 columns */
+				gap: 20px;
+			}
+
+			.card {
+				background: #fff;
+				border-radius: 12px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				overflow: hidden;
+				text-align: center;
+				transition: transform 0.2s ease;
+			}
+
+			.card:hover {
+				transform: translateY(-5px);
+			}
+
+			.card img {
+				width: 100%;
+				height: 180px;
+				object-fit: cover;
+			}
+
+			.card h2 {
+				font-size: 18px;
+				margin: 15px 10px 5px;
+				color: #222;
+			}
+
+			.card p {
+				font-size: 14px;
+				color: #666;
+				margin-bottom: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Accommodations in London</h1>
+			<div class="grid-container">
+				<div class="card">
+					<img src="hotel_2.jpg" alt="The Ritz London" />
+					<h2>The Ritz London</h2>
+					<p>Night starting at £300</p>
+				</div>
+				<div class="card">
+					<img src="hotel_2.jpg" alt="The Savoy" />
+					<h2>The Savoy</h2>
+					<p>Night starting at £280</p>
+				</div>
+				<div class="card">
+					<img src="hotel_2.jpg" alt="Claridge's" />
+					<h2>Claridge's</h2>
+					<p>Night starting at £350</p>
+				</div>
+				<div class="card">
+					<img src="hotel_2.jpg" alt="The Shard" />
+					<h2>The Shard</h2>
+					<p>Night starting at £400</p>
+				</div>
+				<div class="card">
+					<img src="hotel_2.jpg" alt="The Landmark" />
+					<h2>The Landmark</h2>
+					<p>Night starting at £320</p>
+				</div>
+				<div class="card">
+					<img src="hotel_2.jpg" alt="The Dorchester" />
+					<h2>The Dorchester</h2>
+					<p>Night starting at £370</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
