@@ -81,7 +81,7 @@ body {
 }
 
 .search-bar {
-	width: 300px;
+	width: 250px;
 	font-size: 1rem;
 	margin-left: 1rem;
 	color: #333333;
@@ -133,7 +133,7 @@ input[type='search']::-webkit-search-cancel-button {
 	border-radius: 30px;
 	border: 2px solid #e4e4e4;
 	cursor: pointer;
-	transition: border-color 0.3s ease-in;
+	transition: border-color 0.1s ease-in;
 }
 
 .filter-button:hover {
@@ -174,7 +174,26 @@ input[type='search']::-webkit-search-cancel-button {
 }
 
 /* ! ACCOMMODATION */
+.accommodation-wrapper {
+	display: flex;
+	gap: 2rem;
+	align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+	.accommodation-wrapper {
+		flex-direction: column;
+	}
+
+	.accommodations,
+	.popular-section {
+		max-width: 100%;
+		margin: 20px 0;
+	}
+}
+
 .accommodations {
+	flex: 3;
 	text-align: left;
 	max-width: 1200px;
 	margin: 40px 20px;
@@ -255,6 +274,48 @@ input[type='search']::-webkit-search-cancel-button {
 	.accomm_container img {
 		height: 160px;
 	}
+}
+
+/* ! POPULAR ACCOMMODATIONS */
+.popular-section {
+	flex: 1;
+	background: #e4e4e4;
+	padding: 20px;
+	margin-top: 40px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	max-width: 500px;
+}
+
+.popular-section h2 {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.popular-card {
+	display: flex;
+	align-items: center;
+	background: #f9f9f9;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+.popular-card img {
+	width: 50%;
+	height: 200px;
+	margin-right: 20px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.popular-card h3 {
+	font-size: 1.25rem;
+	margin-bottom: 30px;
+}
+
+.popular-card p {
+	font-size: 1rem;
 }
 
 /* ! ACTIVITIES */
@@ -352,6 +413,7 @@ input[type='search']::-webkit-search-cancel-button {
 
 .footer_links a:hover {
 	color: #1a74d4;
+	text-decoration: underline;
 }
 
 .left_side,
