@@ -174,19 +174,19 @@ input[type='search']::-webkit-search-cancel-button {
 }
 
 /* ! ACCOMMODATION */
-.accommodation-wrapper {
+.accommodation_wrapper {
 	display: flex;
 	gap: 2rem;
 	align-items: flex-start;
 }
 
 @media (max-width: 1024px) {
-	.accommodation-wrapper {
+	.accommodation_wrapper {
 		flex-direction: column;
 	}
 
 	.accommodations,
-	.popular-section {
+	.popular {
 		max-width: 100%;
 		margin: 20px 0;
 	}
@@ -277,7 +277,7 @@ input[type='search']::-webkit-search-cancel-button {
 }
 
 /* ! POPULAR ACCOMMODATIONS */
-.popular-section {
+.popular {
 	flex: 1;
 	background: #e4e4e4;
 	padding: 20px;
@@ -287,12 +287,12 @@ input[type='search']::-webkit-search-cancel-button {
 	max-width: 500px;
 }
 
-.popular-section h2 {
+.popular h2 {
 	text-align: left;
 	margin-bottom: 20px;
 }
 
-.popular-card {
+.popular_card {
 	display: flex;
 	align-items: center;
 	background: #f9f9f9;
@@ -301,7 +301,7 @@ input[type='search']::-webkit-search-cancel-button {
 	border-radius: 10px;
 }
 
-.popular-card img {
+.popular_card img {
 	width: 50%;
 	height: 200px;
 	margin-right: 20px;
@@ -309,12 +309,12 @@ input[type='search']::-webkit-search-cancel-button {
 	object-fit: cover;
 }
 
-.popular-card h3 {
+.popular_card h3 {
 	font-size: 1.25rem;
 	margin-bottom: 30px;
 }
 
-.popular-card p {
+.popular_card p {
 	font-size: 1rem;
 }
 
