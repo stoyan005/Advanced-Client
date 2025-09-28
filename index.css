@@ -46,6 +46,12 @@ body {
 	text-decoration: none;
 	color: #555555;
 	font-size: 1rem;
+	transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+	color: #1a74d4;
+	text-decoration: underline #1a74d4;
 }
 
 /* ! DESTINATION TEXT */
